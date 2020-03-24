@@ -5,11 +5,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Volchonok</title>
 </head>
 
 <body>
-    <div class="text-center" style="height: 100vh; padding:0; margin:0; background-image: url('/reigan.gif'); background-size: cover;"></div>
+    <div class="text-center" style="height: 100vh; padding:0; margin:0; background-image: url('/img/reigan.gif'); background-size: cover;"></div>
+
+    <button type="button" class="btn btn-primary fixed-bottom text-center" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Request a call</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Feedback form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <form action="sipapi.php" method="post">
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="FormControlInputTel" class="col-form-label">Your number</label>
+                            <input type="text" class="form-control" id="FormControlInputTel" placeholder="79969468550" name="tel">
+                        </div>
+                        <div class="FormControlInputComment">
+                            <label for="message-text" class="col-form-label">Message</label>
+                            <textarea type="textarea" class="form-control" id="FormControlInputComment" name="comment" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" name="sub">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
