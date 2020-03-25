@@ -10,36 +10,6 @@
 <body>
     <div class="text-center" style="height: 100vh; padding:0; margin:0; background-image: url('/img/reigan.gif'); background-size: cover;"></div>
 
-    <button type="button" class="btn btn-primary fixed-bottom text-center" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Request a call</button>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Feedback form</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                </div>
-                <form action="sipapi.php" method="post">
-                    <div class="modal-body">
-
-                        <div class="form-group">
-                            <label for="FormControlInputTel" class="col-form-label">Your number</label>
-                            <input type="text" class="form-control" id="FormControlInputTel" placeholder="79969468550" name="tel">
-                        </div>
-                        <div class="FormControlInputComment">
-                            <label for="message-text" class="col-form-label">Message</label>
-                            <textarea type="textarea" class="form-control" id="FormControlInputComment" name="comment" rows="2"></textarea>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" name="sub">Send message</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
 
 
